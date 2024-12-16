@@ -32,5 +32,7 @@ class Solution(object):
                 if nums[pivot] <= target and nums[right] >= target:
                     left = pivot
                 else:
+                    # else if nums[left] > nums[pivot] > target and nums[right] >= nums[pivot] > target
+                    #   or target > nums[right] >= nums[pivot]
                     right = pivot - 1
         return False
