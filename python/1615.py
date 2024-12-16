@@ -23,8 +23,8 @@ class Solution(object):
                 count_dict["%d %d" % (min(road[0], road[1]), max(road[0], road[1]))] = 1
         ans = 0
         # go through all possible pairs of cities, using count_dict to get network rank
-        for i in range (n):
-            for j in range (i + 1, n):
+        for i in range(n):
+            for j in range(i + 1, n):
                 net_rank = 0
                 if ("%d" % (i)) in count_dict and ("%d" % (j)) in count_dict:
                     net_rank = count_dict["%d" % (i)] + count_dict["%d" % (j)]

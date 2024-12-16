@@ -9,7 +9,7 @@ class Solution(object):
         minimum = min(salary[0], salary[1])
         maximum = max(salary[0], salary[1])
         total = 0.0
-        for i in range (2, length):
+        for i in range(2, length):
             if salary[i] < minimum:
                 total = total + minimum
                 minimum = salary[i]

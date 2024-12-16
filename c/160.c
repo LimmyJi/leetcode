@@ -11,7 +11,6 @@ struct ListNode *getIntersectionNode(struct ListNode *headA, struct ListNode *he
     while (currentA){
         countA++;
         currentA = currentA->next;
-        printf("%d", countA);
     }
     struct ListNode *currentB = headB;
     int countB = 0;

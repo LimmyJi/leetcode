@@ -32,7 +32,7 @@ class SmallestInfiniteSet(object):
         if num > self.Set[length - 1]:
             return
         # else see if we can add it in the front
-        for i in range (0, length):
+        for i in range(0, length):
             if self.Set[i] == num:
                 return
             if self.Set[i] > num:
